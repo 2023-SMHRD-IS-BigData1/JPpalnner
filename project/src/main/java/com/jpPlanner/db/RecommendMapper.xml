@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jpPlanner.db.RecommendMapper">
+
+	<select id="poiSelect" resultType="com.jpPlanner.model.RecommendVO">
+		SELECT * 
+		FROM LOCATIONTB 
+		WHERE LOCATION_CATEGORY = #{VALUE}
+	</select>
+	
+	<select id="imgSelect" resultType="String">
+		SELECT IMG 
+		FROM IMGTB 
+		WHERE LOCATION_CATEGORY = #{VALUE}
+	</select>
+	
+	<select id="BoardSelect" resultType="com.jpPlanner.model.BoardVO">
+		SELECT SCHEDULE_NUM, TITLE 
+		FROM SCHEDULE 
+		WHERE ID = #{VALUE}
+	</select>
+
+</mapper>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jpPlanner.db.Schedulemapper">
+    <!-- 스케줄 정보 저장 -->
+    <insert id="insertcon" parameterType="JDataVO">
+   	 	INSERT INTO SCHEDULE (SCHEDULE_NUM, ID, TITLE)
+    	VALUES (Schedule_num_SEQ.NEXTVAL, #{id}, #{title})
+	</insert>
+	
+	<insert id="insertconten" parameterType="JDataVO">
+   	 	INSERT INTO CONTEN (SCHEDULE_NUM, NDAY, SETTIME, CONT, PRICE, NOTE, ROW_NUM)
+    	VALUES (#{schedule_num}, #{nday}, #{settime}, #{cont}, #{price}, #{note}, #{row_num})
+	</insert>
+	
+	<select id="schedule" resultType="JDataVO">
+		SELECT *
+		FROM (SELECT * FROM schedule ORDER BY schedule_num DESC)
+		WHERE ROWNUM = 1
+	</select>
+	
+	<!-- 	
+	<select id="viewcontent" resultType="contentVO">
+	SELECT * FROM CONTEN 
+	WHRER SCHEDULE_NUM = #{schedule_num} 
+	ORDER BY NDAY, ROW_NUM
+	</select> -->
+	
+	
+	
+</mapper>

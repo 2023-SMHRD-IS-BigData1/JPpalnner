@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jpPlanner.db.Membermapper">
+ 	<!-- 내가 사용할 SQL 문장을 작성하는 곳 -->
+ 	<insert id="join" parameterType="MemberVO">
+ 		INSERT INTO MEMBER (ID, PW, NICK) VALUES(#{id},#{pw},#{nick})
+ 	</insert>
+ 	
+ 	<select id="login" parameterType="MemberVO" resultType="MemberVO">
+		SELECT * FROM MEMBER WHERE ID=#{id} AND PW=#{pw} 
+	</select>
+	
+	<select id="idCheck" resultType="MemberVO">
+		SELECT * FROM MEMBER  WHERE ID = #{id}
+	</select>
+ 	
+ 	
+</mapper>

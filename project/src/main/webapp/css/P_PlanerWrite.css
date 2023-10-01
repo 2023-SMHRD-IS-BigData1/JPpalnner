@@ -1,0 +1,515 @@
+/* 타이틀 */
+@font-face {
+	font-family: "nanum";
+	src: url(../font/NANUMSQUARER.OTF);
+}
+
+@font-face {
+	font-family: "esamanru";
+	src: url(../font/ESAMANRU\ OTF\ LIGHT.OTF);
+}
+
+@font-face {
+	font-family: "hyemin";
+	src: url(../font/IM_HYEMIN-REGULAR.OTF);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	font-family: nanum;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F5F5F5;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin: 25px 45px 0 45px;
+}
+
+.logo {
+	width: 99px;
+	height: 123px;
+
+}
+
+.header-1 {
+	display: flex;
+}
+
+.header-2 {
+	text-align: center;
+	margin-left: 16px;
+	margin-top: 30px;
+}
+
+h2 {
+	font-family: esamanru;
+	font-size: 30px;
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+.title {
+	display: flex;
+	height: 120px;
+}
+
+.header-border {
+	border-top: solid 1px #6B63FB;
+	margin-left: 150px;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	margin-top: 30px;
+	margin-right: 40px;
+	height: 20px;
+	font-size: 20px;
+}
+
+.menu li {
+	padding-left: 40px;
+}
+
+li a {
+	text-decoration-line: none;
+	color: black;
+}
+
+/* 여행지 추천 */
+#propose {
+	margin: 0 auto;
+
+	padding: 0px 50px 15px 50px;
+	width: 1455px;
+	background-color: white;
+	border-radius: 16px;
+	border: 1px solid #e5e8ea;
+}
+
+#proTitle {
+	margin: 0 auto;
+	padding: 29px 0px 20px;
+	font-size: 18px;
+	font-family: nanum;
+	font-weight: 700;
+	color: black;
+}
+
+.filter_DropdownFilter table {
+	margin: 10px;
+}
+
+.cont-select {
+	position: relative;
+	width: 149px;
+}
+
+.btn-select {
+	width: 70px;
+	height: 30px;
+	font-size: 15px;
+	font-family: nanum;
+	font-weight: bold;
+	background-color: #fff;
+	border: 0px solid #C4C4C4;
+	box-sizing: border-box;
+	border-radius: 10px;
+	cursor: pointer;
+	text-align: left;
+	background: url("../img/scroll1.png") center right 10px no-repeat;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.btn-select:hover .btn-select:focus {
+	color: #4F44FF;
+}
+
+.list-member {
+	display: none;
+	position: absolute;
+	width: 149px;
+	top: 49px;
+	left: 0;
+	border: 1px solid #C4C4C4;
+	background-color: white;
+	box-sizing: border-box;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	padding: 5px;
+	z-index: 1;
+}
+
+.btn-select.on {
+	background: url("../img/scroll2.png") center right 10px no-repeat;
+}
+
+.btn-select.on+.list-member {
+	display: block;
+}
+
+.list-member li {
+	height: 40px;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+
+.filter_btn {
+	font-family: nanum;
+	font-weight: 700;
+	background-color: rgba(255, 255, 255, 0);
+	display: flex;
+	align-items: center;
+	padding: 0 14px;
+	width: 100%;
+	height: 31px;
+	text-align: left;
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+	white-space-collapse: collapse;
+	text-wrap: nowrap;
+}
+
+.list-member li a:hover {
+	color: #4F44FF;
+	text-decoration-line: none;
+}
+
+#propose hr {
+	border-bottom: 1px solid #C4C4C4;
+	margin: 0 auto;
+}
+
+#scrollBox_ScrollBox {
+	margin-bottom: 21px;
+	position: relative;
+	display: block;
+}
+
+#scrollBox_scroll {
+	margin: 0 auto;
+	/* 스크롤 버튼 사용시 아래 것 사용하기 */
+	/* padding: 10px 0px 5px; */
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+.scrollBox_list {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	/* 스크롤 버튼 사용시 아래 것 사용하기 */
+	/* padding-inline-start: 40px; */
+	/* background-color: turquoise; */
+}
+
+.scrollBox_observer {
+	width: 29px;
+	flex-shrink: 0;
+	list-style-position: initial;
+	list-style-image: initial;
+	list-style-type: none;
+	display: list-item;
+	/* background-color: #F33232; */
+}
+
+.scrollBox_ScrollBoxItem__scrollBox_as_first {
+	margin-left: 0px;
+	flex-shrink: 0;
+	list-style-position: initial;
+	list-style-image: initial;
+	list-style-type: none;
+	display: list-item;
+	/* background-color: violet; */
+}
+
+.scrollBox_ScrollBoxItem {
+	margin-left: 10px;
+	list-style-position: initial;
+	list-style-image: initial;
+	list-style-type: none;
+	display: list-item;
+	/* background-color: yellowgreen; */
+}
+
+
+
+.poi_PoiItem {
+	list-style-position: initial;
+	list-style-image: initial;
+	list-style-type: none;
+	/* background-color: tomato; */
+}
+
+.poi_PoiItem a:hover {
+	text-decoration-line: none;
+	background-color: #5144ff21;
+}
+
+.poi_anchor {
+	width: 420px;
+	display: block;
+	border-radius: inherit;
+	text-decoration: inherit;
+	color: inherit;
+	cursor: pointer;
+}
+
+.poi_figure {
+	margin: 0px;
+	height: 190px;
+	position: relative;
+	width: 100%;
+	border-radius: 6px;
+	background-color: #f4f4f4;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	/* margin-inline-start: 40px; */
+	/* margin-inline-end: 40px; */
+}
+
+.poi_img {
+	width: 200px;
+	height: 100%;
+	object-fit: cover;
+	vertical-align: top;
+	overflow-clip-margin: content-box;
+	display: flex;
+	/* margin-left: 1px; */
+}
+
+.poi_figure_img1 {
+	border-radius: 10px 0px 0px 16px;
+	float: left;
+}
+
+.poi_figure_img2 {
+	border-radius: 0px 10px 16px 0px;
+}
+
+.poi_info {
+	padding: 10px 4px 0px;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.poi_name {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 6px;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: nanum;
+	line-height: 1.4;
+	letter-spacing: -.2px;
+	color: #424242;
+}
+
+.poi_hashtag {
+	font-size: 13px;
+	font-family: nanum;
+	line-height: 1.54;
+	letter-spacing: -.2px;
+	color: gray;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	flex-shrink: 0;
+}
+
+.scrollBox_observer {
+	width: 29px;
+	flex-shrink: 0;
+	list-style-position: initial;
+	list-style-image: initial;
+	list-style-type: none;
+	display: list-item;
+}
+
+.scrollBox_scroller {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.scrollBox_left {
+	background-image: url(../img/sign2.png);
+	background-size: 48px;
+	background-position: -49px 0;
+	width: 48px;
+	height: 48px;
+	z-index: 10;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	bottom: 0;
+	margin-top: 33px;
+	margin-left: 7px;
+	opacity: .95;
+	cursor: pointer;
+	padding: 0px;
+	border: 0px;
+	color: inherit;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+.scrollBox_right {
+	background-image: url(../img/sign1.png);
+	background-size: 48px;
+	background-position: -49px -49px;
+	width: 48px;
+	height: 48px;
+	z-index: 10;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	margin-top: 33px;
+	margin-right: 7px;
+	opacity: .95;
+	cursor: pointer;
+	padding: 0px;
+	border: 0px;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 1em;
+	color: inherit;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+/* 스케줄 */
+
+.p-planerwrite {
+	margin: 10px auto;
+	height: 100%;
+	width: 1555px;
+	background-color: white;
+	border-radius: 16px;
+	border: 1px solid #e5e8ea;
+}
+
+.textarea-box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	margin: 15px 900px 15px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.button input {
+	cursor: pointer;
+	margin: 0 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid #424242;
+
+}
+
+fieldset {
+	border: none;
+	width: 70%;
+	padding: 0;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #EDEDED;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+fieldset img {
+	width: 100%;
+	height: 120px;
+}
+
+.h1title {
+	text-align: center;
+	margin: 50px 0;
+
+}
+
+h1 input {
+	text-align: center;
+	font-size: 30px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px 1px #6B63FB;
+	outline: none;
+}
+
+hr {
+	border: 2px solid slategray;
+	margin-bottom: 50px;
+	margin-left: 320px;
+	margin-right: 320px;
+}
+
+.textarea-size textarea {
+	font-family: hyemin;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	width: 80%;
+	margin: 0 10%;
+	margin-bottom: 3%;
+	font-size: 20px;
+	resize: none;
+	overflow: hidden;
+}
+
+/* footer */
+.footer {
+	/* position: absolute; */
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100px;
+	/* padding: 30px 0 20px 0; */
+	background-color: #e2e2e2;
+	text-align: center;
+	display: block;
+	box-shadow: inset 0 5px 5px -5px #636262;
+	font-family: esamanru;
+}
+
+#footer_inner {
+	display: flex;
+	align-items: center;
+}
+
+#footer_inner a {
+	margin: 0 auto;
+	color: inherit;
+	text-decoration: none;
+}
+
+#footer_inner img {
+	margin: 0 auto;
+	object-fit: scale-down;
+}

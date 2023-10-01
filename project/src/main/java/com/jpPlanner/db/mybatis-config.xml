@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 환경설정 (계정, driver, url...)-->
+	<properties resource="com/jpPlanner/db/db.properties"/>
+	
+	<typeAliases>
+		<typeAlias type="com.jpPlanner.model.MemberVO" alias="MemberVO"/>
+		<typeAlias type="com.jpPlanner.model.ScheduleVO" alias="ScheduleVO"/>
+		<typeAlias type="com.jpPlanner.model.JDataVO" alias="JDataVO"/>
+		<typeAlias type="com.jpPlanner.model.P_scheduleVO" alias="P_scheduleVO"/>
+	</typeAliases>
+	
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="${driver}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <!-- sql문들을 정의해주는 mapper.xml을 계속해서 만들건데 어디에 있는지 경로를 지정해주는 태그 -->
+  <mappers>
+    <mapper resource="com/jpPlanner/db/Membermapper.xml"/>
+    <mapper resource="com/jpPlanner/db/J_schedulemapper.xml"/>
+    <mapper resource="com/jpPlanner/db/Schedulemapper.xml"/>
+    <mapper resource="com/jpPlanner/db/CheckListMapper.xml"/>
+    <mapper resource="com/jpPlanner/db/RecommendMapper.xml"/>
+    <mapper resource="com/jpPlanner/db/P_schedulemapper.xml"/>
+  </mappers>
+</configuration>
