@@ -1,0 +1,183 @@
+/* 타이틀 */
+@font-face {
+  font-family: "nanum";
+  src: url(../font/NANUMSQUARER.OTF);
+}
+@font-face {
+  font-family: "esamanru";
+  src: url(../font/ESAMANRU\ OTF\ LIGHT.OTF);
+}
+
+* {
+  font-family: nanum;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #F5F5F5;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 45px 0 45px;
+}
+.logo {
+  width: 99px;
+  height: 123px;
+}
+.header-1 {
+  display: flex;
+}
+.header-2 {
+  text-align: center;
+  margin-left: 16px;
+  margin-top: 30px;
+}
+.text1{
+  font-family: esamanru;
+  font-size: 30px;
+}
+.text2{
+  font-family: esamanru;
+  font-size: 40px;
+}
+.title{
+  display: flex;
+  height: 120px;
+}
+
+.header-border {
+  border-top: solid 1px #4F44FF;
+  margin-left: 150px;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  margin-top: 30px;
+  margin-right: 40px;
+  height: 20px;
+  font-size: 20px;
+}
+
+.menu li {
+  padding-left: 40px;
+}
+li a {
+  text-decoration-line: none;
+  color: black;
+}
+/* 메인 화면 이미지 */
+
+.img {
+  display: flex;
+  justify-content: space-between;
+}
+
+figure.mainimg {
+  position: relative;
+  overflow: hidden;
+  margin-top: 200px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+
+}
+figure.mainimg * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+figure.mainimg img {
+  padding-bottom: 30px;
+  width: 70%;
+  max-width: 90%;
+  background-color: #F5F5F5;
+  position: relative;
+  opacity: 0.9;
+}
+figure.mainimg figcaption {
+  position: absolute;
+  top: 80%;
+  left: 7%;
+  right: 7%;
+  bottom: 10%;
+}
+figure.mainimg .heading {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+figure.mainimg h2 {
+  color: #4F44FF;
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: 400px;
+  font-size: 50px;
+  font-family: esamanru;
+}
+figure.mainimg h2 span {
+  font-family: esamanru;
+  font-weight: 800px;
+}
+figure.mainimg h2:before,
+figure.mainimg h2:after {
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 1px;
+  top: 50%;
+}
+figure.mainimg h2:before {
+  left: -1000%;
+}
+figure.mainimg h2:after {
+  right: -1000%;
+}
+figure.mainimg p {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  opacity: 0;
+  line-height: 1.6em;
+  font-size: 0.9em;
+  font-family: esamanru;
+}
+figure.mainimg a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.mainimg:hover img,
+figure.mainimg.hover img {
+  opacity: 0.1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.mainimg:hover figcaption,
+figure.mainimg.hover figcaption {
+  top: 7%;
+  bottom: 7%;
+}
+figure.mainimg:hover p,
+figure.mainimg.hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}

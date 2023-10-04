@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jpPlanner.db.J_schedulemapper">
+    <!-- 스케줄 정보 저장 -->
+    <insert id="insertSchedule" parameterType="ScheduleVO">
+   	 	INSERT INTO CONTEN (SCHEDULE_NUM, NDAY, SETTIME, CONT, PRICE, NOTE, ROW_NUM)
+    	VALUES (2, 1, #{settime}, #{cont}, #{price}, #{note}, 1)
+	</insert>
+	
+	<select id="printSchedule" parameterType="BigDecimal" resultType="com.jpPlanner.model.JScheduleContentVO">
+		SELECT TITLE, NDAY, SETTIME, CONT, PRICE, NOTE, ROW_NUM
+		FROM SCHEDULE A
+		INNER JOIN CONTEN C ON A.SCHEDULE_NUM = C.SCHEDULE_NUM
+		WHERE A.SCHEDULE_NUM = #{value}
+		ORDER BY A.SCHEDULE_NUM, C.NDAY, C.ROW_NUM
+	</select>
+	
+</mapper>

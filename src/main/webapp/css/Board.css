@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "nanum";
+    src: url(./font/NANUMSQUARER.OTF);
+}
+@font-face {
+    font-family: "imhm";
+    src: url(./font/IM_HYEMIN-BOLD.OTF);
+}
+@font-face {
+    font-family: esamanru;
+    src: url(font/ESAMANRU\ OTF\ LIGHT.OTF);
+}
+@font-face {
+    font-family: nanumB;
+    src: url(./font/NANUMSQUAREEB.OTF);
+}
+
+*, *::before, *::afer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+    font-family: nanum;
+}
+button{
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input:focus{
+    outline: none;
+}
+
+/* header */
+textarea{
+    border-radius: 10px;
+}
+
+input{
+    font-size: 20px;
+}
+
+div{
+    display: block;
+}
+ body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F5F5F5;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 45px 0 45px;
+}
+.logo {
+    width: 99px;
+    height: 123px;
+
+}
+.header-1 {
+    display: flex;
+}
+.header-2 {
+    text-align: center;
+    margin-left: 16px;
+    margin-top: 30px;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-family: esamanru;
+} 
+.title{
+    display: flex;
+    height: 120px;
+}
+.header-border {
+    border-top: solid 1px #6B63FB;
+    margin-left: 150px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 40px;
+    height: 20px;
+    font-size: 20px;
+}  
+.menu li {
+    padding-left: 40px;
+    text-decoration-line: none;
+    color: black;
+    font-family: nanum;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: #6B63FB;
+}
+
+/* title */
+#title{
+    margin: 0 auto;
+    width: 1280px;
+}
+#title p{
+    margin: 80px 0 10px 0;
+    font-family: nanumB;
+    font-size: 25px;
+}
+#title hr{
+    border: 2px solid #707070;
+    margin-bottom: 55px;
+}
+
+/* community */
+#communityBox{
+    margin: 0 auto;
+    padding: 40px;
+    width: 1200px;
+    background-color: white;
+    border: 1px solid #e5e8ea;
+    border-radius: 16px;
+}
+#communityBox p{
+    margin: 10px 0 50px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6B63FB;
+}
+table td{
+    width: 33%;
+}
+table .post{
+    margin-bottom: 50px;
+}
+table img{
+    width: 260px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+.img{
+    width: 260px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+table a:hover img{
+    border-radius: 10px;
+    transform: scale(1.4);
+}
+.post_title{
+    margin-top: 10px;
+    font-size: 17px;
+    color: #424242;
+}
+.post span{
+    font-size: 14px;
+    color: #535353;
+}
+.hr{
+    margin-top: 5px;
+    width: 260px;
+    border-bottom: 1px solid #eeeeef;
+}
+
+
+/* footer */
+.footer{
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 30px;
+    height: 50px;
+    padding-top: 40px;
+    background-color: #e2e2e2;
+    text-align: center;
+    display: block;
+    box-shadow: inset 0 5px 5px -5px #636262;
+}
+#footer_inner{
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    font-family: esamanru;
+}
+#footer_inner a{
+    margin: 0 auto;
+}
+#footer_inner img{
+    width: 20px;
+    object-fit: scale-down;
+}

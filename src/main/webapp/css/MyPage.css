@@ -1,0 +1,270 @@
+/* 타이틀 */
+@font-face {
+    font-family: "nanum";
+    src: url(../font/NANUMSQUARER.OTF);
+}
+@font-face {
+    font-family: "esamanru";
+    src: url(../font/ESAMANRU\ OTF\ LIGHT.OTF);
+}
+a {
+    color: inherit;
+    text-decoration: none;  
+}
+* {
+    font-family: nanum;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F5F5F5;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 45px 0 45px;
+}
+.logo {
+    width: 99px;
+    height: 123px;
+  
+}
+.header-1 {
+    display: flex;
+}
+.header-2 {
+    text-align: center;
+    margin-left: 16px;
+    margin-top: 30px;
+}
+h2 {
+    font-family: esamanru;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+} 
+.title{
+    display: flex;
+    height: 120px;
+}
+.header-border {
+    border-top: solid 1px #4F44FF;
+    margin-left: 150px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 40px;
+    height: 20px;
+    font-size: 20px;
+}  
+.menu li {
+    padding-left: 40px;
+}
+li a {
+    text-decoration-line: none;
+    color: black;
+}
+
+/* 프로필 */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}    
+
+.profile-nickname-email {
+    margin-top: 180px;
+    margin-left: 17%;
+    width: 100%;
+
+}
+.profile-nickname h3 {
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+}
+.profile-email {
+    font-size: 20px;
+}
+.mypage-img {
+    margin-right: 13%;
+}
+
+/* 마이 스케줄 */
+.myschedule-title-button {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+}
+.myschedule-button {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 18px;
+}
+button {
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: none;
+    box-shadow: 1px 1px 4px 1px black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.myschedule-title {
+    margin-top: 3%;
+    margin-bottom: 18px;
+    margin-left: 20%;
+}
+.myschedule-title span {
+    font-size: 18px;
+    color: #4F44FF;
+}
+.myschedule-box {
+    margin: 0 17% 0 17%
+}
+.myschedule-list {
+    background-color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #4F44FF;
+    border-collapse: collapse;   
+}
+th {
+    border-bottom: 2px solid #4F44FF;
+}
+th:nth-child(1) {
+    width: 1%;
+}
+th:nth-child(2) {
+    width: 4%;
+}
+th:nth-child(3) {
+    text-align: center;
+    width: 70%;
+}
+td {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+td a {
+    text-decoration-line: none;
+    color: black;
+}
+input {
+    float: right;
+    border-radius: 5px;
+    border: none;
+    background-color: lavenderblush;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* 마이스케줄 페이지 넘기기 */
+
+.schedulepage-num {
+    text-align: center;
+    padding: 10px
+}
+
+.schedulepage-num li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.schedulepage-num li a {
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 23px 3px 3px 3px;
+    box-shadow: 1px 1px 3px ;
+    background-color: white;
+    color: black;
+    text-decoration-line: none;
+}
+
+/* 게시판 작성 스케줄 */
+
+.boardschedule-title {
+    width: 70%;
+    margin: 5% 16% 1% 16%;
+    color: #4F44FF;
+    font-size: 18px;
+}
+.boardschedule-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.board-img img{
+    width: 250px;
+    height: 250px;
+    margin-left: 16%;
+    margin-top: 2%;
+    padding-right: 30px;
+}
+
+.board-title-name {
+    margin-left: 16%;
+    margin-bottom: 30px;
+}
+
+/* 게시판스케줄 페이지 넘기기 */
+
+.boardpage-num {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+.boardpage-num li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.boardpage-num li a {
+    display: block;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 23px 3px 3px 3px;
+    box-shadow: 1px 1px 3px ;
+    background-color: white;
+    color: black;
+    text-decoration-line: none;
+}
+
+    /* footer */
+.footer{
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    /* padding: 30px 0 20px 0; */
+    background-color: #e2e2e2;
+    text-align: center;
+    display: block;
+    box-shadow: inset 0 5px 5px -5px #636262;
+    font-family: esamanru;
+}
+#footer_inner{
+    display: flex;
+    align-items: center;
+}
+#footer_inner a{
+    margin: 0 auto;
+    color: inherit;
+    text-decoration: none;
+}
+#footer_inner img{
+    margin: 0 auto;
+    object-fit: scale-down;
+}

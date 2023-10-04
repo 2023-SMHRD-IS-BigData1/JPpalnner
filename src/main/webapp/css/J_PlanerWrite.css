@@ -1,0 +1,772 @@
+        @font-face {
+            font-family: "nanum";
+            src: url(../font/NANUMSQUARER.OTF);
+        }
+        @font-face {
+            font-family: "imhm";
+            src: url(../font/IM_HYEMIN-BOLD.OTF);
+        }
+        @font-face {
+            font-family: esamanru;
+            src: url(../font/ESAMANRU\ OTF\ LIGHT.OTF);
+        }
+        
+        /* 헤더 부분 */
+        body{
+            margin: 0px;
+            padding: 0;
+            line-height: 1.44;
+            /* font-family: ; */
+            color: #424242;
+            background-color: whitesmoke;
+        }
+        
+        textarea{
+            border-radius: 10px;
+        }
+
+        input{
+            font-size: 20px;
+        }
+        
+        div{
+            display: block;
+        }
+        /* 타이틀 */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #F5F5F5;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 45px 0 45px;
+        }
+        .logo {
+            width: 99px;
+            height: 123px;
+        
+        }
+        .header-1 {
+            display: flex;
+        }
+        .header-2 {
+            text-align: center;
+            margin-left: 16px;
+            margin-top: 30px;
+        }
+        h2 {
+            font-size: 30px;
+            margin-top: 25px;
+            margin-bottom: 0px;
+            font-family: esamanru;
+        } 
+        .title{
+            display: flex;
+            height: 120px;
+        }
+        .header-border {
+            border-top: solid 1px #6B63FB;
+            margin-left: 150px;
+        }
+        
+        .menu{
+            display: flex;
+            list-style: none;
+            margin-top: 30px;
+            margin-right: 40px;
+            height: 20px;
+            font-size: 20px;
+        }  
+        .menu li {
+            padding-left: 40px;
+        }
+        li a {
+            text-decoration-line: none;
+            color: black;
+            font-family: nanum;
+        }
+        /* 헤더 부분 끝 */
+
+
+         #box{
+            width: 1728px;
+            margin-left: 96px;
+            margin-right: 96px;
+            /* margin-bottom: 96px; */
+        }
+
+        #map{
+            margin: 10px auto;
+            width: 1455px;
+            height: 469px;
+            background-color: white;
+            border-radius: 16px;
+            border: 1px solid #e5e8ea;
+        }
+
+        .mapWrapper{
+            text-align: left;
+            margin-left: 80px;
+        }
+
+        #mapPage{
+            margin: 0 auto;
+            width: 1000px;
+            height: 420px;
+            margin-top: 25px;
+            display:inline-block;
+            vertical-align:middle;
+        }
+        .span2 {
+            color: red;
+            font-size: 18px;
+        }
+        #mapResult{
+            height: 30px;
+            font-size: 15px;
+            font-family: nanum;
+        }
+
+        #mapPage input{
+            font-size: 15px;
+            font-family: nanum;
+            clear: both;
+        }
+
+        #mapPage_map{
+            width: 1000px;
+            height: 350px;
+            border: 1px solid #424242;
+        }
+
+        #mapWrite button{
+            margin-bottom: 10px;
+            border: 3px solid #3d3d3d;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: white;
+            color: #3d3d3d;
+            box-shadow: 2px 2px 2px 2px rgb(167, 166, 166);
+        }
+
+        #mapWrite{
+            margin: 0 auto;
+            margin-left: 10px;
+            margin-top: 5px;
+            padding-top: 15px;
+            width: 300px;
+            height: 420px;
+            display:inline-block;
+            vertical-align:middle;
+            text-align: left;
+        }
+
+        
+        #mapWrite p{
+            position: static;
+            font-size: 20px;
+            font-family: nanum;
+            color: #000000;
+        }
+        
+        #mapWrite input{
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        #selectLevel{
+            font-size: 20px;
+        }
+
+        #mapSubmit{
+            border: 3px solid #3d3d3d;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: white;
+            color: #3d3d3d;
+            box-shadow: 2px 2px 2px 2px rgb(167, 166, 166);
+        }
+
+        /* 여행지 추천 */
+        #propose{
+            margin: 0 auto;
+
+            padding: 0px 50px 15px 50px; 
+            width: 1455px;
+            background-color: white;
+            border-radius: 16px;
+            border: 1px solid #e5e8ea;
+        }
+
+        #proTitle{
+            margin: 0 auto;
+            padding: 29px 0px 20px;
+            font-size: 18px;
+            font-family: nanum;
+            font-weight: 700;
+            color: black;
+        }
+       
+        .filter_DropdownFilter table{
+            margin: 10px;
+        }
+
+        .cont-select {
+            position: relative;
+            width: 149px;
+        }
+
+        .btn-select {
+            width: 70px;
+            height: 30px;
+            font-size: 15px;
+            font-family: nanum;
+            font-weight: bold;
+            background-color: #fff;
+            border: 0px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: left;
+            background: url("../img/scroll1.png") center right 10px no-repeat;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .btn-select:hover .btn-select:focus { 
+            color: #4F44FF;
+        }
+
+        .list-member {
+            display: none;
+            position: absolute;
+            width: 149px;
+            top: 49px;
+            left: 0;
+            border: 1px solid #C4C4C4;
+            background-color: white;
+            box-sizing: border-box;
+            box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            padding: 5px;
+            z-index: 1;
+        }
+
+        .btn-select.on {
+            background: url("../img/scroll2.png") center right 10px no-repeat;
+        }
+
+        .btn-select.on+.list-member {
+            display: block;
+        }
+
+        .list-member li {
+            height: 40px;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        .filter_btn {
+            font-family: nanum;
+            font-weight: 700;
+            background-color: rgba(255, 255, 255, 0);
+            display: flex;
+            align-items: center;
+            padding: 0 14px;
+            width: 100%;
+            height: 31px;
+            text-align: left;
+            cursor: pointer;
+            box-sizing: border-box;
+            position: relative;
+            white-space-collapse: collapse;
+            text-wrap: nowrap;
+        }
+
+        .list-member li a:hover{
+                color: #4F44FF;
+                text-decoration-line: none;
+        }
+        #propose hr{
+            border-bottom: 1px solid #C4C4C4;
+            margin: 0 auto;
+        }
+        
+        #scrollBox_ScrollBox{
+            margin-bottom: 21px;
+            position: relative;
+            display: block;
+        }
+
+        #scrollBox_scroll{
+            margin:0 auto;
+            /* 스크롤 버튼 사용시 아래 것 사용하기 */
+            /* padding: 10px 0px 5px; */
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+
+        .scrollBox_list{
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            /* 스크롤 버튼 사용시 아래 것 사용하기 */
+            /* padding-inline-start: 40px; */
+            /* background-color: turquoise; */
+        }
+        
+        .scrollBox_observer{
+            width: 29px;
+            flex-shrink: 0;
+            list-style-position: initial;
+            list-style-image: initial;
+            list-style-type: none;
+            display: list-item;
+            /* background-color: #F33232; */
+        }
+        
+        .scrollBox_ScrollBoxItem__scrollBox_as_first{
+            margin-left: 0px;
+            flex-shrink: 0;
+            list-style-position: initial;
+            list-style-image: initial;
+            list-style-type: none;
+            display: list-item;
+            /* background-color: violet; */
+        }
+
+        .scrollBox_ScrollBoxItem{
+            margin-left: 10px;
+            list-style-position: initial;
+            list-style-image: initial;
+            list-style-type: none;
+            display: list-item;
+            /* background-color: yellowgreen; */
+        }
+        
+
+
+        .poi_PoiItem{
+            list-style-position: initial;
+            list-style-image: initial;
+            list-style-type: none;
+            /* background-color: tomato; */
+        }
+        .poi_PoiItem a:hover{
+            text-decoration-line: none;
+            background-color: #5144ff21;
+        }
+
+        .poi_anchor{
+            width: 420px;
+            display: block;
+            border-radius: inherit;
+            text-decoration: inherit;
+            color: inherit;
+            cursor:pointer;
+        }
+        
+        .poi_figure{
+            margin: 0px;
+            height: 190px;
+            position: relative;
+            width: 100%;
+            border-radius: 6px;
+            background-color: #f4f4f4;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            /* margin-inline-start: 40px; */
+            /* margin-inline-end: 40px; */
+        }
+
+        .poi_img{
+            width: 200px;
+            height: 100%;
+            object-fit: cover;
+            vertical-align: top;
+            overflow-clip-margin: content-box;
+            display: flex;
+            /* margin-left: 1px; */
+        }
+
+        .poi_figure_img1{
+            border-radius: 10px 0px 0px 16px;
+            float: left;
+        }
+
+        .poi_figure_img2{
+            border-radius: 0px 10px 16px 0px;
+        }
+
+        .poi_info{
+            padding: 10px 4px 0px;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .poi_name{
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 6px;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: nanum;
+            line-height: 1.4;
+            letter-spacing: -.2px;
+            color: #424242;
+        }
+        
+        .poi_hashtag{
+            font-size: 13px;
+            font-family: nanum;
+            line-height: 1.54;
+            letter-spacing: -.2px;
+            color: gray;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            flex-shrink: 0;
+        }
+
+        .scrollBox_observer{
+            width: 29px;
+            flex-shrink: 0;
+            list-style-position: initial;
+            list-style-image: initial;
+            list-style-type: none;
+            display: list-item;
+        }
+
+        .scrollBox_scroller{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .scrollBox_left{
+            background-image: url(../img/sign2.png);
+            background-size: 48px;
+            background-position: -49px 0;
+            width: 48px;
+            height: 48px;
+            z-index: 10;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            bottom: 0;
+            margin-top: 33px;
+            margin-left: 7px;
+            opacity: .95;
+            cursor: pointer;
+            padding: 0px;
+            border: 0px;
+            color: inherit;
+            background-color: transparent;
+            border-radius: 0;
+        }
+
+        .scrollBox_right{
+            background-image: url(../img/sign1.png);
+            background-size: 48px;
+            background-position: -49px -49px;
+            width: 48px;
+            height: 48px;
+            z-index: 10;
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            margin-top: 33px;
+            margin-right: 7px;
+            opacity: .95;
+            cursor: pointer;
+            padding: 0px;
+            border: 0px;
+            font-family: inherit;
+            font-weight: inherit;
+            font-size: 1em;
+            color: inherit;
+            background-color: transparent;
+            border-radius: 0;
+        }
+        
+        #j_planner{
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 30px 50px 50px 50px;
+            width: 1455px;
+            bottom: 50px;
+            background-color: white;
+            border-radius: 16px;
+            border: 1px solid #e5e8ea;
+            height: 1%;
+            overflow: hidden;
+        }
+
+        #j_schedule{
+            margin: 0 auto;
+            margin-bottom: 90px;
+            width: 1555px;
+        }
+        
+        #schedule{
+            margin: 20px 0px;
+            /* padding: 29px 50px; */
+            float: left;
+        }
+
+        #schedule span{
+            font-size: 25px;
+        }
+
+        #schedule input{
+            font-size: 25px;
+            height: 35px;
+        }
+
+        .scheTitle{
+            font-family: imhm;
+            width: 500px;
+        }
+        
+        #j_schedule hr{        
+            text-align: center;
+            width: 1352.330px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #F33232;
+            position: absolute;
+        }
+
+
+        /* #scheduleBtn,  */
+        #schedule #save, #plusDay, #deleteDay{
+            margin-top: 30px;
+            margin-bottom: 8px;
+            margin-right: 3px;
+            padding: 2px;
+            border: 3px solid #aa9869;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: white;
+            color: #aa9869;
+            box-shadow: 2px 2px 2px 2px rgb(167, 166, 166);
+        }
+
+        table{
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        #checkListNote table{
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        #scheduleDiv textarea{
+          min-height: 10px;
+          overflow-y: hidden;
+          resize: none;
+        }
+
+        .tg {
+            border-collapse:collapse;border-spacing:2px;
+        }
+
+        .tg td{
+            border-style:solid;
+            border-width:5px;
+            font-size:20px;
+            overflow:hidden;
+            padding:10px 5px;
+            word-break:normal;
+        }
+
+        .tg th{
+            border-color:#d1c8b2;
+            border-style:solid;
+            border-width:5px;
+            font-size:20px;
+            font-weight:normal;
+            overflow:hidden;
+            padding:10px 5px;
+            word-break:normal;
+        }
+
+        .tg .tg-rbsu{
+            background-color:#ffffff;
+            border-color:#d1c8b2;
+            font-size:17px;
+            font-family: imhm;
+            text-align:center;
+            vertical-align:top;
+        }
+
+        .tg-rbsu{
+            background-color:#ffffff;
+            border-color:#d1c8b2;
+            font-size:20px;
+            text-align:center;
+            vertical-align: middle;
+        }
+        
+        .tg .tg-mlo0{
+            background-color:#ffffff;
+            border-color:#d1c8b2;
+            font-size:20px;
+            text-align:left;
+            vertical-align:top
+        }
+
+        .time{
+            width: 120px;
+            font-size: 17px;
+            font-family: imhm;
+        }
+
+        .content{
+            width: 360px;
+            font-size: 17px;
+            font-family: imhm;
+        }
+
+        .cost{
+            width: 90px;
+            font-size: 17px;
+            font-family: imhm;
+        }
+
+        .notes{
+            width: 200px;
+            font-size: 17px;
+            font-family: imhm;
+        }
+
+        .addAndDelete{
+            margin: 0 auto;
+            padding: 2px;
+            border-color:#d1c8b200;
+            font-size:20px;
+            text-align:left;
+            vertical-align:top
+        }
+
+        .add, .delete{
+            margin-top: 0px;
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            display : flex;
+            justify-content : center;
+             align-items : center;
+        }
+
+        #checkListBox{
+            width: 359px;
+            float: right;
+            margin-right: px;
+            margin-top: 0px;
+            /* background-color: #d1c8b2; */
+            display: flex;
+        }
+
+        #checkListBox img{
+            width:114px;
+            
+            position: absolute;
+            transform: translateX(100%);
+        }
+
+        #checkListNote{
+            width: 359px;
+            margin-top: 27px;
+            padding-bottom: 20px;
+            background-color: #F7FBCF;
+            box-shadow: 10px 10px 6px rgb(201, 201, 201);
+        }
+
+        #checkListNote p{
+            left: 30px;
+            top: 30px;
+            position: relative;
+        }
+
+
+        #checkListNote textarea {
+            width: 270px;
+            min-height: 10px;
+            overflow-y: hidden;
+            margin: 13px;
+            resize: none;
+            height: 30px;
+            font-size: 17px;
+            font-family: imhm;
+       }
+
+       #checkListBox form{
+        margin: 10px;
+       }
+
+       .check{
+        vertical-align: top 10px ;
+       }
+
+       input[type="checkbox"]{
+        display: none;
+      }
+       input[type="checkbox"] + label{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
+        border:2px solid black;
+        position: relative;
+      }
+       input[type="checkbox"]:checked + label::after{
+        content:'✔';
+        color: red;
+        font-size: 25px;
+        width: 30px;
+        height: 30px;
+        bottom: 0px;
+        position: absolute;
+      }
+      
+      /* footer */
+.footer{
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    /* padding: 30px 0 20px 0; */
+    background-color: #e2e2e2;
+    text-align: center;
+    display: block;
+    box-shadow: inset 0 5px 5px -5px #636262;
+    font-family: esamanru;
+}
+#footer_inner{
+    display: flex;
+    align-items: center;
+}
+#footer_inner a{
+    margin: 0 auto;
+    color: inherit;
+    text-decoration: none;
+}
+#footer_inner img{
+    margin: 0 auto;
+    object-fit: scale-down;
+}

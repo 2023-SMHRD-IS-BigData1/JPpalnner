@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jpPlanner.db.CheckListMapper">
+	<insert id="checkListInsert" parameterType="com.jpPlanner.model.CheckListVO">
+		INSERT INTO CHECK_LIST
+		(SCHEDULE_NUM, CHECK_LIST_TEXT, IS_CHECK)
+		VALUES
+		(#{schedule_num}, #{check_list_text}, #{is_check})
+	</insert>
+    
+</mapper>

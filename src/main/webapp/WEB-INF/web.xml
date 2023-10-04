@@ -1,0 +1,151 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+<servlet>
+	<servlet-name>Connector</servlet-name>
+	<display-name>Connector</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.API.Connector</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>RecommendService</servlet-name>
+	<display-name>RecommendService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.RecommendService</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>JoinService</servlet-name>
+	<display-name>JoinService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.JoinService</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>LoginService</servlet-name>
+	<display-name>LoginService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.LoginService</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>IDcheckService</servlet-name>
+	<display-name>IDcheckService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.IDcheckService</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>LogoutService</servlet-name>
+	<display-name>LogoutService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.LogoutService</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>makeSessionService</servlet-name>
+	<display-name>makeSessionService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.makeSessionService</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>BoardService</servlet-name>
+	<display-name>BoardService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.BoardService</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>ScheduleDataInsert</servlet-name>
+	<display-name>ScheduleDataInsert</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.ScheduleDataInsert</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>contentselect</servlet-name>
+	<display-name>contentselect</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.contentselect</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>CheckListDAO</servlet-name>
+	<display-name>CheckListDAO</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.model.CheckListDAO</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>SchedulePrint</servlet-name>
+	<display-name>SchedulePrint</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.SchedulePrint</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>PdatainsertService</servlet-name>
+	<display-name>PdatainsertService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.PdatainsertService</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>MyPageService</servlet-name>
+	<display-name>MyPageService</display-name>
+	<description></description>
+	<servlet-class>com.jpPlanner.controller.MyPageService</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+	<servlet-name>JoinService</servlet-name>
+	<url-pattern>/JoinService</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>Connector</servlet-name>
+	<url-pattern>/Connector</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>LoginService</servlet-name>
+	<url-pattern>/LoginService</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>IDcheckService</servlet-name>
+	<url-pattern>/IDcheckService</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>RecommendService</servlet-name>
+	<url-pattern>/RecommendService</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>LogoutService</servlet-name>
+	<url-pattern>/LogoutService</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>makeSessionService</servlet-name>
+	<url-pattern>/makeSessionService</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>BoardService</servlet-name>
+	<url-pattern>/BoardService</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ScheduleDataInsert</servlet-name>
+	<url-pattern>/ScheduleDataInsert</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>contentselect</servlet-name>
+	<url-pattern>/contentselect</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>CheckListDAO</servlet-name>
+	<url-pattern>/CheckListDAO</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>SchedulePrint</servlet-name>
+	<url-pattern>/SchedulePrint</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>PdatainsertService</servlet-name>
+	<url-pattern>/PdatainsertService</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>MyPageService</servlet-name>
+	<url-pattern>/MyPageService</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
