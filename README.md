@@ -19,6 +19,7 @@
 * 기능5
 <br>
 
+
 ## ⛏ 기술스택
 <table>
     <tr>
@@ -84,7 +85,7 @@
 <br>
 
 ## 📌 ER다이어그램
-![image](https://file.notion.so/f/f/7d517356-a462-4f9c-a48a-f0b048b4f3ab/ea2391e6-d40f-47b9-86ab-a2e5a09fd89b/KakaoTalk_20231005_100111996.png?id=ec2404c4-be0b-4b16-9c5a-c6bdd1b570fb&table=block&spaceId=7d517356-a462-4f9c-a48a-f0b048b4f3ab&expirationTimestamp=1696636800000&signature=G40e0gx5gXUmluQV3QC6ClAyoXK0O_6_RzwGz9nq4Dk&downloadName=KakaoTalk_20231005_100111996.png)
+![KakaoTalk_20231005_100111996](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/91fdf269-2353-41de-9030-a9601546dcfe)
 <br>
 
 ## 🖥 화면 구성
