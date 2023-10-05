@@ -4,22 +4,23 @@
 
 
 ## 👀 서비스 소개
-* 서비스명:  꽃 개화 시기별 우리 지역 근처 데이트/드라이브 추천 장소 및 꽃 축제 추천 
-* 서비스설명: 
+* 서비스명:  MBTI에 맞는 스케쥴표 레이아웃을 제공하는 웹 기반 여행 플래너 사이트
 <br>
 
 ## 📅 프로젝트 기간
-2022.04.22 ~ 2022.06.03 (6주)
+2023.09.07 ~ 2023.09.20 (2주)
 <br>
 
 ## ⭐ 주요 기능
 * 출발지, 경유지, 도착지를 입력받아 지도로 이동 경로, 시간, 거리 등을 제공<br>
 ![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/6c1e8427-c7cb-45dd-a8eb-331691f43d4d)
 
-* 기능2
-* 기능3
-* 기능4
-* 기능5
+* 지역별로 여행가기 좋은 장소 추천 <br>
+  ![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/f1da3833-84a6-4131-a2c3-96dad5f7f200)
+
+* 자유롭게 일자와 스케쥴 내용을 추가하고 삭제할 수 있는 스케쥴표 제공 <br>
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/c1be641f-ac82-4d8c-b529-cc906f8111f4)
+
 <br>
 
 
@@ -79,12 +80,8 @@
 ![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/7504d2e8-6b13-4f7c-b82c-1734f67094f3)
 <br>
 
-## 📌 SW유스케이스
-![image](https://user-images.githubusercontent.com/25995055/178401023-9a015e66-aa6e-4d74-8564-9b1f9d306649.png)
-<br>
-
 ## 📌 서비스 흐름도
-![image](https://user-images.githubusercontent.com/25995055/178401048-d6484bda-a2d7-40e1-998b-2bd195cd9f89.png)
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/dcfa47b8-0062-40d0-a398-ce16383733ed)
 <br>
 
 ## 📌 ER다이어그램
@@ -93,16 +90,26 @@
 
 ## 🖥 화면 구성
 
-### 로그인/회원가입/회원괸리/회원수정/회원탈퇴
-![image](https://user-images.githubusercontent.com/25995055/178401098-95f15a0e-a2de-415e-83d5-883bb4cb0656.png)
+### 메인 페이지
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/ae1b7594-2204-4a3d-9e49-177f90c56016)
 <br>
 
-### 옷 정보/코디 추천(날씨, 팁, 오늘의 코디, 참고할 수 있는 코디)
-![image](https://user-images.githubusercontent.com/25995055/178401127-287e6de2-4396-49fc-a107-59c4d5cd55c7.png)
+### 마이 페이지
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/a17a9806-e6b1-4d6a-a8b9-ecea07fe8339)
 <br>
 
-### 일정/고객센터
-![image](https://user-images.githubusercontent.com/25995055/178401150-861f0e93-0f40-4fae-98c1-2099bf513c8d.png)
+### 커뮤니티 페이지
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/1314ec1e-4fdf-4b6b-ab6a-4ef44ce6afff)
+<br>
+
+### Jplanner 작성 페이지
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/90cc62f2-fbae-4a56-bf15-5ddc07785037)
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/fc465223-2c90-44ca-bf0f-c1eedcd2f282)
+<br>
+
+### Pplanner 작성 페이지
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/d085cff4-f08f-4791-89a4-00bb8cb8ee57)
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/3763eced-97b6-4f81-a7eb-775e0832a922)
 <br>
 
 ## 👨‍👩‍👦‍👦 팀원 역할
