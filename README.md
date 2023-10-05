@@ -110,7 +110,6 @@
     <td align="center"><img src="https://mb.ntdtv.kr/assets/uploads/2019/01/Screen-Shot-2019-01-08-at-4.31.55-PM-e1546932545978.png" width="100" height="100"/></td>
     <td align="center"><img src="https://mblogthumb-phinf.pstatic.net/20160127_177/krazymouse_1453865104404DjQIi_PNG/%C4%AB%C4%AB%BF%C0%C7%C1%B7%BB%C1%EE_%B6%F3%C0%CC%BE%F0.png?type=w2" width="100" height="100"/></td>
     <td align="center"><img src="https://i.pinimg.com/236x/ed/bb/53/edbb53d4f6dd710431c1140551404af9.jpg" width="100" height="100"/></td>
-    <td align="center"><img src="https://pbs.twimg.com/media/B-n6uPYUUAAZSUx.png" width="100" height="100"/></td>
   </tr>
   <tr>
     <td align="center"><strong>최윤석</strong></td>
@@ -137,7 +136,9 @@
 프로젝트 진행하는 동안 발생했던 이슈 중 가장 기억에 남았던 문제와 해결 프로세스 나열(2~5가지 정도)
   
 * 문제1<br>
- 문제점 설명 및 해결방안
+T-Map API의 위도, 경도를 추출하는 시스템이 건물명으로 검색할 때, 도로명 주소와 달리 정확도가 낮은 문제 발생<br>
+해결 방안<br>
+Naver Search API를 연결하여 건물명이나 장소 검색시, 도로명 주소를 추출한 뒤 해당 주소로 위도, 경도를 추출하여 유저 검색 편의성과 정확성을 증대
  
 * 문제2<br>
  문제점 설명 및 해결방안
