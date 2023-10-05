@@ -1,5 +1,6 @@
-# 📎 꽃 보러 갈래?(팀명: 아름답조)
-![image](https://user-images.githubusercontent.com/25995055/178401309-2a2ffc86-ef45-439b-bfd8-6978312100bc.png)
+# 📎 JPplanner(팀명: 포피플)
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/3b6b7ae9-3154-42e0-8a3c-5a10fd032a48)
+
 
 
 ## 👀 서비스 소개
@@ -73,7 +74,7 @@
 <br>
 
 ## ⚙ 시스템 아키텍처(구조) 예시 
-![서비스 아키텍처](https://user-images.githubusercontent.com/25995055/169925538-15867bd9-aa0b-42fc-a39b-88981e926e51.png)
+![image](https://github.com/2023-SMHRD-IS-BigData1/JPpalnner/assets/97040581/7504d2e8-6b13-4f7c-b82c-1734f67094f3)
 <br>
 
 ## 📌 SW유스케이스
